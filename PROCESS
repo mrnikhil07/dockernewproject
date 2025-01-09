@@ -57,7 +57,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/RAHAMSHAIK007/dockernewproject.git'
+                git 'https://github.com/nikhilkolambikar07/dockernewproject.git'
             }
         }
         stage('build') {
@@ -92,7 +92,7 @@ systemctl restart docker.service
 version: '3'
 services:
   devops:
-    image: rahamshaik/devopsreponit:latest
+    image: nikhilkolambikar07/devopsreponit:latest
     ports:
       - "80:80"
     volumes:
@@ -101,7 +101,7 @@ services:
       replicas: 3
 
   aws:
-    image: rahamshaik/awsreponit:latest
+    image: nikhilkolambikar07/awsreponit:latest
     ports:
       - "81:80"
     volumes:
@@ -110,7 +110,7 @@ services:
       replicas: 3
 
   datascience:
-    image: rahamshaik/datasciencereponit:latest
+    image: nikhilkolambikar07/datasciencereponit:latest
     ports:
       - "82:80"
     volumes:
@@ -119,7 +119,7 @@ services:
       replicas: 3
 
   azure:
-    image: rahamshaik/azurereponit:latest
+    image: nikhilkolambikar07/azurereponit:latest
     ports:
       - "83:80"
     volumes:
